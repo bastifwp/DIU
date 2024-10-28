@@ -1,0 +1,16 @@
+.custom-arrow {
+    z-index: 1; //Para que flechas estén sobre imagen
+    width: 30px; 
+    height: 30px; 
+   
+
+}
+
+.custom-arrow.next {
+    right: 10px; 
+}
+
+.custom-arrow.prev {
+    left: 10px; 
+}
+

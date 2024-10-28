@@ -1,0 +1,13 @@
+.noticias-slider .slide{
+    position: relative;
+    height: 600px;
+    display: flex;
+    background-size: contain;
+
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: inset 0 0 10em 0 rgb(0, 0, 0, 0.5)
+}

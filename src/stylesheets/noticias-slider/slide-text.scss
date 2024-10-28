@@ -1,0 +1,19 @@
+.slide-text{
+    position: relative;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+    justify-content: left;
+}
+
+
+.slide-text::before {
+    content: ''; /* Necessary for the pseudo-element to render */
+    position: absolute; /* Position it absolutely relative to the text container */
+    left: -10px; /* Adjust to position it to the left of the text */
+    top: 50%; /* Center it vertically */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    width: 5px; /* Set the width of the vertical bar */
+    height: 90%; /* Match the height of the text content */
+    background-color: orange; /* Set the color of the bar */
+}
