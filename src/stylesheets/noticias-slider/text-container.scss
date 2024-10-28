@@ -1,0 +1,28 @@
+.text-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    margin-left: 250px;
+    transform: translateY(-50%);
+    z-index: 2;
+    animation: slideIn 1s ease-out forwards;
+    //background: red;
+    text-align: left;
+    max-width: 30%;
+}
+
+
+@keyframes slideIn{
+    from{
+        opacity: 0;
+        transform: translate(-100%, -50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX0(0, -50%);
+    }
+}
+
+

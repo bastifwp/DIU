@@ -1,0 +1,16 @@
+.nav-bar__button{
+    display: inline-block;
+    align-self: center;
+    color: white;
+    background-color: rgb(49, 49, 163);
+    height: 25px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0; 
+    cursor: pointer;
+    box-shadow: 0px 2px 2px lightgray;
+    transition: ease background-color 250ms;
+    &:hover {
+        background-color: rgb(27, 27, 122);
+    }
+}
