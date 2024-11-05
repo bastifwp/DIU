@@ -1,10 +1,23 @@
 import React from 'react'
+import Noticias from '../components/noticias'
+import RightSidebar from '../components/RightSidebar'
+import Carrusel3D from '../components/AreasDRE'
+import Beneficios from '../components/Beneficios'
 
 export const HomePage = () => {
   return (
     <>
-      <p>¡Te damos la bienvenida a la Interfaz energética!</p>
-      <p>En esta página encontraras una 💡 ampolleta que podrás encender y apagar con un botón</p>
+      <h1 className='layout__title'> Noticias </h1>
+      <div className='first__row'>
+        <Noticias />
+        <RightSidebar />
+      </div>
+      <h1 className='layout__title'> Áreas Dirección de Relaciones Estudiantiles </h1>
+
+      <Carrusel3D />
+
+      <h1 className='layout__title'> Beneficios Estudiantiles </h1>
+      
     </>
   )
 }

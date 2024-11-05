@@ -65,19 +65,21 @@ const Noticias = () => {
     return(
 
         //
-        <Slider {...settings} className="noticias-slider">
-            
-            {/*Recorremos cada slide */}
-            {slides.map((slide, index) => ( 
-                <div key={index} className="slide">
-                    <img src={slide.image} alt="" className='background-image'/>
-                    <div className = "text-container">
-                        <h2 className="slide-text">{slide.text}</h2>
-                        <button className="see-more">Ver más</button>
+        //<div className='noticias-wrapper'>
+            <Slider {...settings} className="noticias-slider">
+                
+                {/*Recorremos cada slide */}
+                {slides.map((slide, index) => ( 
+                    <div key={index} className="slide">
+                        <img src={slide.image} alt="" className='background-image'/>
+                        <div className = "text-container">
+                            <h2 className="slide-text">{slide.text}</h2>
+                            <button className="see-more">Ver más</button>
+                        </div>
                     </div>
-                </div>
-            ))}
-        </Slider>
+                ))}
+            </Slider>
+        //</div>
     );
 };
 
