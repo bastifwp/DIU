@@ -1,0 +1,47 @@
+.benef-slider {
+
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 150%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+
+  .slick-slide {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+
+  .slick-center .slide {
+    opacity: 1;
+    border-radius: 10px;
+  }
+
+
+  .slide {
+    background-color: #258a63;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    text-shadow: 2px 2px 8px #333333;
+    min-height: 170px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position:inherit;
+
+    text-decoration: none;
+    transition-duration: 0.3s;
+    box-shadow: 0 1px 1rem -4px #000;
+  
+  }
+
+  .slide:hover{
+    transform: scale(1.05);
+    
+  }
+
+
+
+}
+

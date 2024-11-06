@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Logo from '../assets/logoRREE.png'
+import '../stylesheets/searchbar/SearchBar.scss';
 
 
 export const NavBar = () => {
@@ -17,9 +18,17 @@ export const NavBar = () => {
       </button>
     )
   }
+  function SearchBar() {
+    return (
+      <div className="search-bar">
+        <input type="text" placeholder="Buscar" />
+      </div>
+    );
+  }
+
   return (
     <nav className='nav-bar'>
-      <img src={Logo} height={80} alt='Logo UTFSM' />
+      <img src={Logo} height={80} alt='Logo UTFSM'/>
       <NavLink
         className={navLinkClass}
         to='/'
@@ -28,30 +37,31 @@ export const NavBar = () => {
       </NavLink>
       <NavLink
         className={navLinkClass}
-        to='/lightbulb'
+        to={{pathname: 'https://rree.usm.cl/quienes-somos/'}} target="_blank"
       >
         Quiénes Somos
       </NavLink>
       <NavLink
         className={navLinkClass}
-        to='/lightbulb'
+        to='/'
       >
         Áreas
       </NavLink>
       <NavLink
         className={navLinkClass}
-        to='/lightbulb'
+        to={{pathname: 'https://rree.usm.cl/publicaciones/'}} target="_blank"
       >
         Publicaciones
       </NavLink>
       <NavLink
         className={navLinkClass}
-        to='/lightbulb'
+        to={{pathname: 'https://rree.usm.cl/contacto/'}} target="_blank"
       >
         Contacto
       </NavLink>
       <NavButton buttonText={'Activación BAES - JUNAEB 2024'} disabled={false}></NavButton>
       <NavButton buttonText={'Accesibilidad'} disabled={false}></NavButton>
+      <SearchBar />
     </nav>
   )
 }

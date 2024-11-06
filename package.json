@@ -9,13 +9,14 @@
   },
   "scripts": {
     "prod": "webpack --mode=production",
-    "dev": "webpack serve --mode=development"
+    "dev": "webpack serve --mode=development --port=8090"
   },
   "author": "alexarenasf",
   "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@ussebastian/kitdigital-react": "^0.7.0",
     "react": "^18.3.1",
     "react-card-slider-component": "^1.0.9",
     "react-dom": "^18.3.1",

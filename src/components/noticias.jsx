@@ -12,20 +12,6 @@ import image2 from "../assets/img_noticias/era.png"
 
 //import { NavLink } from 'react-router-dom'
 
-//Acá estará la información de las cards de las noticias
-const slides = [
-
-    {
-        image: image1,
-        text: "Decreto de Rectoría N° 056/2024 Actualización Reglamento Institucional de Derechos, Deberes y Disciplina del Estudiantado"
-    },
-
-    {
-        image: image2,
-        text:"Diagnostico de salud y calidad de vida"
-    }
-]
-
 
 //Flechas para cambiar de slide
 const SamplenextArrow  = ({className, style, onClick}) =>{
@@ -67,19 +53,26 @@ const Noticias = () => {
         //
         //<div className='noticias-wrapper'>
             <Slider {...settings} className="noticias-slider">
-                
-                {/*Recorremos cada slide */}
-                {slides.map((slide, index) => ( 
-                    <div key={index} className="slide">
-                        <img src={slide.image} alt="" className='background-image'/>
-                        <div className = "text-container">
-                            <h2 className="slide-text">{slide.text}</h2>
-                            <button className="see-more">Ver más</button>
-                        </div>
+
+                <div className='slide'>
+                    <img src={image2} className='background-image' />
+                    <div className="text-container">
+                        <h2 className='slide-text'>Diagnostico de salud y calidad de vida</h2>
+                        <a className="see-more" href='https://rree.usm.cl/apoyo-y-acompanamiento/proyecto-salud-mental/diagnostico-de-salud-mental-y-calidad-de-vida/' >Ver más</a>
                     </div>
-                ))}
+                </div>
+
+                
+                <div className='slide'>
+                    <img src={image1} className='background-image' />
+                    <div className="text-container">
+                        <h2 className='slide-text'>Charla Emprendimiento, creatividad y regulación se realiza con éxito en USM Sede Concepción</h2>
+                        <a className="see-more" href='https://rree.usm.cl/noticias/charla-emprendimiento-creatividad-y-regulacion-se-realiza-con-exito-en-usm-sede-concepcion/'>Ver más</a>
+                    </div>
+                </div>
+
+
             </Slider>
-        //</div>
     );
 };
 

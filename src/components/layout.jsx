@@ -15,15 +15,10 @@ const Layout = () => {
     <BrowserRouter>
       <div className='layout'>
         <NavBar />
-        {/* Aquí añadimos la SearchBar debajo del NavBar */}
-        <div className='search-bar'>
-          <SearchBar />
-        </div>
 
         <div className='layout__content'>
           <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path='/lightbulb' element={<LightbulbPage />} />
           </Routes>
         </div>
         {/* Footer agregado debajo */}

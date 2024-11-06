@@ -1,4 +1,3 @@
-//Aqui va Beneficios juju
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -29,14 +28,14 @@ const SampleprevArrow = ({ className, style, onClick }) => {
 
 
 
-const Beneficios = () => {
+const Enlaces = () => {
     const settings = {
       infinite: false,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
-      centerMode: true,
-      centerPadding: "300px",
+      centerMode: false,
+      centerPadding: "600px",
       focusOnSelect: false,
       nextArrow: <SamplenextArrow />,
       prevArrow: <SampleprevArrow />,
@@ -44,27 +43,24 @@ const Beneficios = () => {
   
     
     return (
-      <Slider {...settings} className="benef-slider">
-        <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="slide">
-          <h3>Gratuidad</h3>
+      <Slider {...settings} className="enlace-slider">
+        <a className="slide" href="https://portal.beneficiosestudiantiles.cl/">
+            <h3>Portal Beneficios Mineduc</h3>
         </a>
-        <a href="https://portal.beneficiosestudiantiles.cl/" className="slide">
-          <h3>Becas y créditos Mineduc</h3>
-        </a>
-
-        <a href="https://rree.usm.cl/beneficios/becas-usm/" className="slide">
-          <h3>Becas usm</h3>
+        <a className="slide" href="https://portal.ingresa.cl/">
+            <h3>Crédito Aval del Estado (CAE)</h3>
         </a>
 
-        <a href = "https://rree.usm.cl/atencion-social-beneficios/tne/" className="slide">
-          <h3>Tarjeta Nacional Estudiantil</h3>
+        <a className="slide" href="https://www.junaeb.cl/">
+            <h3>Portal Junaeb</h3>
         </a>
 
-        <a href="https://rree.usm.cl/atencion-social-beneficios/credito-con-garantia-estatal-credito-cae/" className="slide">
-          <h3>Crédito Aval del Estado (CAE)</h3>
+        <a className="slide" href="https://www.tne.cl/">
+            <h3>Portal Tarjeta Nacional Estudiantil (TNE)</h3>
         </a>
+
       </Slider>
     );
   };
   
-  export default Beneficios;
+  export default Enlaces;

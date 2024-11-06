@@ -1,0 +1,45 @@
+.enlace-slider {
+
+    display: flex;
+    padding-left: 15px;
+    padding-right: 55px;
+    padding-bottom: 50px;
+    font-size: 150%;
+  
+    .slick-slide {
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      scale: 0.82;
+    }
+  
+    .slick-center .slide {
+      transform: scale(1.1);
+      opacity: 1;
+      box-shadow: 0 1px 1rem -4px #000;
+    }
+  
+  
+    .slide {
+      box-shadow: 0 1px 1rem -4px #000;
+      background-color: rgb(102, 102, 202);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      min-height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      color: white;
+      position:inherit;
+      transition-duration: 0.3s;
+    }
+
+    .slide:hover{
+      transform: scale(1.05);
+    }
+  
+  }
+
+.enlace-slider a{
+  text-decoration: none;
+}

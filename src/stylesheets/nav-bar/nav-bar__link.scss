@@ -10,4 +10,14 @@
   &--active {
     color: rgb(48, 48, 48);
   }
+
+}
+
+.nav-bar__link a{
+  text-decoration: none;
+}
+
+.nav-bar__link a:visited{
+  color: inherit;
+  text-decoration: none;
 }
