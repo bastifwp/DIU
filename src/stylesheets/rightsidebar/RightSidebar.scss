@@ -1,12 +1,11 @@
 .right-sidebar {
   //width: 250px; /* Ajusta el ancho según tus necesidades */
-  margin-right: 15px; /* Asegura que no haya margen extra */
+  //margin-right: 15px; /* Asegura que no haya margen extra */
   padding: 1rem; /* Añade padding si es necesario */
   //position: sticky;
   top: 0; /* Fija el sidebar cuando se desplaza */
-  margin-left: auto;
-  margin-top: 15px;
-  //padding: 20px;
+  //margin-left: auto;
+  margin: 1rem;
   background-color: #f7f7f7;
   border-left: 4px solid #E5B300;
   flex: 1;
@@ -26,6 +25,7 @@
       padding: 20px;
       &:hover {
         background-color: #eeeded;
+        transition: background-color 0.2s ease;
       }
     }
   

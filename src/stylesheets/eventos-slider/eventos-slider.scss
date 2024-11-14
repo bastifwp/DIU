@@ -4,7 +4,6 @@
     display: flex;
     padding-left: 90px;
     padding-right: 15px;
-    background-color: #2e488f;
     //justify-items: center;
   
     .slick-slide {
@@ -56,6 +55,11 @@
   }
 .event__container{
   background-color: #2e488f;
+  width: 100%;
+  //background-image: url("../assets/usm.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin-top: 20px;
   margin-bottom: 20px;
   .title_events{

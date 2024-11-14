@@ -11,6 +11,11 @@
     transition: transform 0.5s ease, opacity 0.5s ease;
   }
 
+  .slick-list {
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+  }
+
   .slick-center .slide {
     opacity: 1;
     border-radius: 10px;

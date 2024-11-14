@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import React from 'react';
 import Slider from 'react-slick';
 
+import image1 from "../assets/usm.jpg"
+
 
 //Flechas para cambiar de slide
 const SamplenextArrow  = ({className, style, onClick}) =>{
