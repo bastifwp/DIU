@@ -47,7 +47,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(47, 47, 146, 0.384);//linear-gradient(to top, rgba(13, 27, 131, 0.8), transparent 40%, transparent 10%, rgba(13, 27, 131, 0.8));
+  background: radial-gradient(circle, rgba(41,181,85,0.5466561624649859) 0%, rgba(6,79,48,1) 100%);//rgba(47, 47, 146, 0.384);
+  border-radius: 10px;
   z-index: 2; 
 }
   .slide:hover{
@@ -63,13 +64,18 @@
     height: 100%;
     object-fit: cover;
     z-index:-2; /*Mantiene la imagen detras del texto */
+    border-radius: 10px;
   }
 
   .text{
+    z-index: 2;
     display: block;
     position: absolute;
     width: 100%;
     height: 100%;
+    color: white;
+    text-decoration: none;
+    text-align: left;
   }
 
 

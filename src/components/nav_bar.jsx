@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Logo from '../assets/logoRREE.png'
 import '../stylesheets/searchbar/SearchBar.scss';
+//import '../stylesheets/dropdown-areas/index.scss';
 
 
 export const NavBar = () => {
@@ -25,7 +26,29 @@ export const NavBar = () => {
       </div>
     );
   }
+  /*
+  const DropdownMenu = () => {
+    return (
+      <div className="dropdown-menu">
+        <ul>
+          <li>Apoyo y acompañamiento</li>
+          <li>Atención Social y Beneficios</li>
+          <li>Fomento y Desarrollo Estudiantil</li>
+          <li>Atención en Salud</li>
+        </ul>
+      </div>
+    );
+  };
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
 
+  const handleMouseEnter = () => {
+    setDropdownVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setDropdownVisible(false);
+  };
+ */
   return (
     <nav className='nav-bar'>
       <img src={Logo} height={80} alt='Logo UTFSM'/>
@@ -41,12 +64,12 @@ export const NavBar = () => {
       >
         Quiénes Somos
       </NavLink>
-      <NavLink
-        className={navLinkClass}
+      <div
+        className="dropdown"
         to='/'
       >
         Áreas
-      </NavLink>
+      </div>
       <NavLink
         className={navLinkClass}
         to={{pathname: 'https://rree.usm.cl/publicaciones/'}} target="_blank"

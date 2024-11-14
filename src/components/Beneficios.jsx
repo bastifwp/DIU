@@ -35,7 +35,7 @@ const SampleprevArrow = ({ className, style, onClick }) => {
 
 const Beneficios = () => {
     const settings = {
-      infinite: false,
+      infinite: true,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -62,21 +62,33 @@ const Beneficios = () => {
         <div className='slide'>
           <img src={image1} className="background-image"/>
             <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
-              <h3 className="slide-text">Gratuidad</h3>
+              <h3>Becas y créditos<br/> Mineduc</h3>
             </a>
         </div>
 
         <div className='slide'>
           <img src={image1} className="background-image"/>
             <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
-              <h3 className="slide-text">Gratuidad</h3>
+              <h3>Becas USM</h3>
             </a>
         </div>
 
         <div className='slide'>
           <img src={image1} className="background-image"/>
             <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
-              <h3 className="slide-text">Gratuidad</h3>
+              <h3>Becas JUNAEB</h3>
+            </a>
+        </div>
+        <div className='slide'>
+          <img src={image1} className="background-image"/>
+            <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
+              <h3>Tarjeta Nacional Estudiantil</h3>
+            </a>
+        </div>
+        <div className='slide'>
+          <img src={image1} className="background-image"/>
+            <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
+              <h3>Crédito Aval del Estado (CAE)</h3>
             </a>
         </div>
                 
