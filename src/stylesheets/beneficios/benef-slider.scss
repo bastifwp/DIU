@@ -23,7 +23,7 @@
 
 
   .slide {
-    background-color: #258a63;
+    position: relative;
     padding: 20px;
     border-radius: 10px;
     text-align: justify;
@@ -33,19 +33,44 @@
     display: flex;
     flex-direction: column;
     color: white;
-    position:inherit;
 
     text-decoration: none;
     transition-duration: 0.3s;
     box-shadow: 0 1px 1rem -4px #000;
-  
   }
 
+  // Haremos un pseudo elemnto por encima para mostrar oscuridad 
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(47, 47, 146, 0.384);//linear-gradient(to top, rgba(13, 27, 131, 0.8), transparent 40%, transparent 10%, rgba(13, 27, 131, 0.8));
+  z-index: 2; 
+}
   .slide:hover{
-    transform: scale(1.05);
-    
+    transform: scale(1.05); 
   }
 
+  .background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index:-2; /*Mantiene la imagen detras del texto */
+  }
+
+  .text{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
 
 
 }

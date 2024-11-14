@@ -6,6 +6,10 @@ import React from 'react';
 import Slider from 'react-slick';
 
 
+import image1 from "../assets/img_noticias/no_responde.jpg"
+import image2 from "../assets/img_noticias/era.png"
+
+
 //Flechas para cambiar de slide
 const SamplenextArrow  = ({className, style, onClick}) =>{
     return (
@@ -41,28 +45,41 @@ const Beneficios = () => {
       nextArrow: <SamplenextArrow />,
       prevArrow: <SampleprevArrow />,
     };
+
   
-    
+
+
     return (
       <Slider {...settings} className="benef-slider">
-        <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="slide">
-          <h3>Gratuidad</h3>
-        </a>
-        <a href="https://portal.beneficiosestudiantiles.cl/" className="slide">
-          <h3>Becas y créditos Mineduc</h3>
-        </a>
+        
+        <div className='slide'>
+          <img src={image2} className="background-image"/>
+          <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
+            <h3>Gratuidad</h3>
+          </a>
+        </div>
 
-        <a href="https://rree.usm.cl/beneficios/becas-usm/" className="slide">
-          <h3>Becas usm</h3>
-        </a>
+        <div className='slide'>
+          <img src={image1} className="background-image"/>
+            <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
+              <h3 className="slide-text">Gratuidad</h3>
+            </a>
+        </div>
 
-        <a href = "https://rree.usm.cl/atencion-social-beneficios/tne/" className="slide">
-          <h3>Tarjeta Nacional Estudiantil</h3>
-        </a>
+        <div className='slide'>
+          <img src={image1} className="background-image"/>
+            <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
+              <h3 className="slide-text">Gratuidad</h3>
+            </a>
+        </div>
 
-        <a href="https://rree.usm.cl/atencion-social-beneficios/credito-con-garantia-estatal-credito-cae/" className="slide">
-          <h3>Crédito Aval del Estado (CAE)</h3>
-        </a>
+        <div className='slide'>
+          <img src={image1} className="background-image"/>
+            <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
+              <h3 className="slide-text">Gratuidad</h3>
+            </a>
+        </div>
+                
       </Slider>
     );
   };
