@@ -10,6 +10,14 @@ import image1 from "../assets/img_noticias/no_responde.jpg"
 import image2 from "../assets/img_noticias/era.png"
 
 
+import cae from "../assets/becas/cae.png"
+import gratuidad from "../assets/becas/gratuidad.jpg"
+import junaeb from "../assets/becas/junaeb.jpg"
+import mineduc from "../assets/becas/mineduc.png"
+import tne from "../assets/becas/tne.jpg"
+import usm from "../assets/becas/usm.jpg"
+
+
 //Flechas para cambiar de slide
 const SamplenextArrow  = ({className, style, onClick}) =>{
     return (
@@ -52,7 +60,7 @@ const Beneficios = () => {
       <Slider {...settings} className="benef-slider">
         
         <div className='slide'>
-          <img src={image2} className="background-image"/>
+          <img src={gratuidad} className="background-image"/>
           <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
             <h3>Gratuidad</h3>
           </a>
@@ -60,7 +68,7 @@ const Beneficios = () => {
         </div>
     
         <div className='slide'>
-          <img src={image1} className="background-image"/>
+          <img src={mineduc} className="background-image"/>
           <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
             <h3>Becas y créditos<br/> Mineduc</h3>
           </a>
@@ -68,7 +76,7 @@ const Beneficios = () => {
         </div>
     
         <div className='slide'>
-          <img src={image1} className="background-image"/>
+          <img src={usm} className="background-image"/>
           <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
             <h3>Becas USM</h3>
           </a>
@@ -76,7 +84,7 @@ const Beneficios = () => {
         </div>
     
         <div className='slide'>
-          <img src={image1} className="background-image"/>
+          <img src={junaeb} className="background-image"/>
           <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
             <h3>Becas JUNAEB</h3>
           </a>
@@ -84,7 +92,7 @@ const Beneficios = () => {
         </div>
     
         <div className='slide'>
-          <img src={image1} className="background-image"/>
+          <img src={tne} className="background-image"/>
           <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
             <h3>Tarjeta Nacional Estudiantil</h3>
           </a>
@@ -92,7 +100,7 @@ const Beneficios = () => {
         </div>
     
         <div className='slide'>
-          <img src={image1} className="background-image"/>
+          <img src={cae} className="background-image"/>
           <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
             <h3>Crédito Aval del Estado (CAE)</h3>
           </a>

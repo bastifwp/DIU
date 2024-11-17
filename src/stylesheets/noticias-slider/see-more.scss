@@ -9,4 +9,9 @@
     font-weight: bold;
     align-self: end;
     text-decoration: none;
+    transition-duration: 300ms;
   }
+
+.see-more:hover{
+  transform: scale(1.05);
+}

@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import React from 'react';
 import Slider from 'react-slick';
-import fondoEnlaces from '../assets/usm.jpg'; // Asegúrate de ajustar la ruta de la imagen
+import fondoEnlaces from '../assets/usmvista.jpg'; // Asegúrate de ajustar la ruta de la imagen
 
 // Flechas para cambiar de slide
 const SamplenextArrow = ({ className, style, onClick }) => {

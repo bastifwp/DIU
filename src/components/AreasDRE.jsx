@@ -51,7 +51,7 @@ const Carrusel = () => {
       <Slider {...settings} className="areas-slider">
         <div className="slide">
           <h3>Atención en Salud</h3>
-          <img src={image1} className="background-image"/>
+          <img src={doctor} className="background-image"/>
 
           <div className="flex-details">
             <div className="description">Servicio Médico y Dental</div>
@@ -63,7 +63,7 @@ const Carrusel = () => {
         </div>
         <div className="slide">
           <h3>Fomento y Desarrollo Estudiantil</h3>
-          <img src={image1} className="background-image"/>
+          <img src={orquesta} className="background-image"/>
           <div className="flex-details">
             <div className="description">Iniciativas y organizaciones estudiantiles</div>
             <div className="link-block">
@@ -74,7 +74,7 @@ const Carrusel = () => {
         </div>
         <div className="slide">
           <h3>Atención Social y Beneficios</h3>
-          <img src={image1} className="background-image"/>
+          <img src={apoyo} className="background-image"/>
           <div className="flex-details">
             <div className="description">Apoyo y becas al estudiante</div>
             <div className="link-block">

@@ -63,10 +63,10 @@ export const NavBar = () => {
     return (
       <div className="dropdown-menu">
         <ul>
-          <li>Apoyo y acompañamiento</li>
-          <li>Atención Social y Beneficios</li>
-          <li>Fomento y Desarrollo Estudiantil</li>
-          <li>Atención en Salud</li>
+          <a className="dropdown-link" href='https://rree.usm.cl/apoyo-y-acompanamiento/'>Apoyo y acompañamiento</a>
+          <a className="dropdown-link" href='https://rree.usm.cl/atencion-social-beneficios/'>Atención Social y Beneficios</a>
+          <a className="dropdown-link" href='https://rree.usm.cl/fomento-iniciativas-estudiantiles/'>Fomento y Desarrollo Estudiantil</a>
+          <a className="dropdown-link" href='https://rree.usm.cl/equipo-atencion-salud/'>Atención en Salud</a>
         </ul>
       </div>
     );
