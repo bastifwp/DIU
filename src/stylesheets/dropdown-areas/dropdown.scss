@@ -2,23 +2,49 @@
     display: inline-block;
     font-weight: bold;
     margin-right: 15px;
-    padding: 8px;
+    //padding: 10px 0;
     color: rgb(107, 106, 106);
     align-self: center;
     text-decoration: none;
+    position: relative; /* Necesario para que el menú sea posicionado relativo a este contenedor */
+    display: inline-block;
+    
   
     &--active {
       color: rgb(48, 48, 48);
     }
   
   }
-  
-  .dropdown a{
-    text-decoration: none;
+
+  .dropdown-menu {
+    position: absolute; /* Posiciona el menú sobre otros elementos */
+    top: 100%; /* Mueve el menú justo debajo del botón */
+    left: 0; /* Alinea el menú con el borde izquierdo del botón */
+    z-index: 10; /* Asegura que el menú esté encima de otros elementos */
+    background-color: #0056b3; /* Fondo azul similar al ejemplo */
+    color: #fff;
+    //padding: 10px 0;
+    padding-right: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      //display: block;
+
+      li {
+        display: block;
+        padding: 10px 15px;
+        cursor: pointer;
+        width: 100%;
+
+        &:hover {
+          background-color: #003f82; /* Color más oscuro al pasar el mouse */
+          border-radius: 5px;
+        }
+      }
+    }
   }
-  
-  .dropdown a:visited{
-    color: inherit;
-    text-decoration: none;
-  }
-  

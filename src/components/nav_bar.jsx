@@ -1,8 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import Logo from '../assets/logoRREE.png'
-import '../stylesheets/searchbar/SearchBar.scss';
-//import '../stylesheets/dropdown-areas/index.scss';
+import '../stylesheets/searchbar/SearchBar.scss'
 
 
 export const NavBar = () => {
@@ -20,13 +19,46 @@ export const NavBar = () => {
     )
   }
   function SearchBar() {
+    const [searchText, setSearchText] = useState('');
+    const [dropdownOptions] = useState([
+      'Noticias',
+      'Áreas Dirección de Relaciones Estudiantiles',
+      'Beneficios Estudiantiles',
+      'Eventos',
+      'Enlaces externos de interés',
+    ]);
+  
+    const handleDropdownChange = (e) => {
+      const selectedOption = e.target.value;
+      setSearchText(selectedOption);
+  
+      if (selectedOption) {
+        // Realiza el scroll automáticamente a la sección correspondiente
+        const targetSection = document.getElementById(selectedOption.toLowerCase());
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+  
     return (
       <div className="search-bar">
-        <input type="text" placeholder="Buscar" />
+        <select
+          value={searchText}
+          onChange={handleDropdownChange}
+          className="search-bar__dropdown"
+        >
+          <option value="">Buscar</option>
+          {dropdownOptions.map((option, index) => (
+            <option key={index} value={option}>
+              {option}
+            </option>
+          ))}
+        </select>
       </div>
     );
   }
-  /*
+  
   const DropdownMenu = () => {
     return (
       <div className="dropdown-menu">
@@ -48,7 +80,8 @@ export const NavBar = () => {
   const handleMouseLeave = () => {
     setDropdownVisible(false);
   };
- */
+  
+ 
   return (
     <nav className='nav-bar'>
       <img src={Logo} height={80} alt='Logo UTFSM'/>
@@ -58,30 +91,39 @@ export const NavBar = () => {
       >
         Inicio
       </NavLink>
-      <NavLink
-        className={navLinkClass}
-        to={{pathname: 'https://rree.usm.cl/quienes-somos/'}} target="_blank"
+      <a
+        href="https://rree.usm.cl/quienes-somos/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="nav-bar__link"
       >
         Quiénes Somos
-      </NavLink>
+      </a>
       <div
         className="dropdown"
-        to='/'
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         Áreas
+        {/* <DropdownMenu /> */}
+        {isDropdownVisible && <DropdownMenu />}
       </div>
-      <NavLink
-        className={navLinkClass}
-        to={{pathname: 'https://rree.usm.cl/publicaciones/'}} target="_blank"
+      <a
+        href="https://rree.usm.cl/publicaciones/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="nav-bar__link"
       >
         Publicaciones
-      </NavLink>
-      <NavLink
-        className={navLinkClass}
-        to={{pathname: 'https://rree.usm.cl/contacto/'}} target="_blank"
+      </a>
+      <a
+        href="https://rree.usm.cl/contacto/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="nav-bar__link"
       >
         Contacto
-      </NavLink>
+      </a>
       <NavButton buttonText={'Activación BAES - JUNAEB 2024'} disabled={false}></NavButton>
       <NavButton buttonText={'Accesibilidad'} disabled={false}></NavButton>
       <SearchBar />

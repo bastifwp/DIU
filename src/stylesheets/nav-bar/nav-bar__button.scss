@@ -4,7 +4,7 @@
     color: white;
     font-weight: bold;
     margin: 5px;
-    background-color: rgb(49, 49, 163);
+    background-color: #0056b3;
     height: 50px;
     width: 220px;
     border-radius: 5px;
@@ -14,6 +14,6 @@
     box-shadow: 0px 2px 2px lightgray;
     transition: ease background-color 250ms;
     &:hover {
-        background-color: rgb(27, 27, 122);
+        background-color: #003f82;
     }
 }

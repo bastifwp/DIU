@@ -4,6 +4,13 @@ import "slick-carousel/slick/slick-theme.css";
 import React from 'react';
 import Slider from 'react-slick';
 
+import apoyo from "../assets/areasdre/apoyo.jpg"
+import doctor from "../assets/areasdre/Doctor.jpg"
+import orquesta from "../assets/areasdre/oeutfsm.jpg"
+import recreacion from "../assets/areasdre/recreacion.jpg"
+
+import image1 from "../assets/img_noticias/no_responde.jpg"
+
 //Flechas para cambiar de slide
 const SamplenextArrow  = ({className, style, onClick}) =>{
   return (
@@ -44,6 +51,7 @@ const Carrusel = () => {
       <Slider {...settings} className="areas-slider">
         <div className="slide">
           <h3>Atención en Salud</h3>
+          <img src={image1} className="background-image"/>
 
           <div className="flex-details">
             <div className="description">Servicio Médico y Dental</div>
@@ -55,7 +63,7 @@ const Carrusel = () => {
         </div>
         <div className="slide">
           <h3>Fomento y Desarrollo Estudiantil</h3>
-
+          <img src={image1} className="background-image"/>
           <div className="flex-details">
             <div className="description">Iniciativas y organizaciones estudiantiles</div>
             <div className="link-block">
@@ -66,7 +74,7 @@ const Carrusel = () => {
         </div>
         <div className="slide">
           <h3>Atención Social y Beneficios</h3>
-
+          <img src={image1} className="background-image"/>
           <div className="flex-details">
             <div className="description">Apoyo y becas al estudiante</div>
             <div className="link-block">

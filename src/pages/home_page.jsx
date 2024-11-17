@@ -10,27 +10,23 @@ import Enlaces from '../components/Enlaces'
 export const HomePage = () => {
   return (
     <>
-      <h1 className='layout__title'> Noticias </h1>
+      <h1 className='layout__title' id='noticias'> Noticias </h1>
       <div className='first__row'>
         <Noticias />
         <RightSidebar />
       </div>
-      <h1 className='layout__title'> Áreas Dirección de Relaciones Estudiantiles </h1>
+      <h1 className='layout__title' id='áreas dirección de relaciones estudiantiles'> Áreas Dirección de Relaciones Estudiantiles </h1>
       <Carrusel3D />
       
-      <h1 className='layout__title'> Beneficios Estudiantiles</h1>
+      <h1 className='layout__title' id='beneficios estudiantiles'> Beneficios Estudiantiles</h1>
       <Beneficios />
 
-      <div className='event__container'>
-        <h1 className='title_events'>Eventos</h1>
-        <Eventos />
-  
-      </div>
+     
+      <Eventos />
+
       
-      <div className='enlaces__container'>
-        <h2 className="layout__title">Enlaces externos de interés</h2>
-        <Enlaces />
-      </div>
+      <h2 className="layout__title"></h2>
+      <Enlaces />
 
     </>
   )

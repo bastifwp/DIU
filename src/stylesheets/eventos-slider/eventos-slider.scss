@@ -1,9 +1,11 @@
 .eventos-slider {
 
+    position: relative;
     //margin-left: 50px;
     display: flex;
-    padding-left: 90px;
+    padding-left: 100px;
     padding-right: 15px;
+
     //justify-items: center;
   
     .slick-slide {
@@ -15,11 +17,12 @@
     .slick-center .slide {  
       opacity: 1;
       box-shadow: 0 1px 1rem -4px #000;
+
     }
   
     .slide {
       box-shadow: 0 1px 1rem -4px #000;
-      background-color: white;
+      background: white;
       padding: 20px;
       padding-left: 50px;
       padding-right: 50px;
@@ -28,6 +31,7 @@
       text-align: justify;
       max-width: 400px;
       min-height: 400px;
+  
 
       //justify-content: left;
       //align-content: center;
@@ -39,33 +43,67 @@
         margin-top: 100px;
         height: 50px;
         text-align: center;
-        background-color: #2e488f;
+        background-color: #0056b3;
         border-radius: 5px;
         font-size: large;
         transition-duration: 0.3s;  
         text-decoration: none;
         line-height: 50px;
-        color: white;
+        color: rgb(255, 255, 255);
         font-weight: bold;
+    
       }
 
       
     }
   
   }
-.event__container{
-  background-color: #2e488f;
+
+.event-container{
+  position: relative;
   width: 100%;
-  //background-image: url("../assets/usm.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 20px;
   margin-bottom: 20px;
+  overflow: hidden;
+
   .title_events{
-    font-size: 24pt;
+    font-size: 270%;
     margin: 0;
-    padding: 20px;
+    padding-top: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
     color: white;
+    font-weight: bold;
   }
+
+
+}
+
+
+.background-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.14);
+
+  object-fit: cover;
+  z-index:-2; /*Mantiene la imagen detras del texto */
+}
+
+.enlaces__container{
+  position: relative;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.529);
+  z-index: -1; /* Make sure the overlay is above the image */
+
 }

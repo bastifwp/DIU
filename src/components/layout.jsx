@@ -21,6 +21,7 @@ const Layout = () => {
             <Route path='/' element={<HomePage />} />
           </Routes>
         </div>
+        
         {/* Footer agregado debajo */}
         <Footer />
       </div>

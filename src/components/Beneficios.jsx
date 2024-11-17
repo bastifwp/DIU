@@ -35,19 +35,18 @@ const SampleprevArrow = ({ className, style, onClick }) => {
 
 const Beneficios = () => {
     const settings = {
-      infinite: true,
+      infinite: false,
       speed: 500,
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
-      centerMode: true,
-      centerPadding: "300px",
+      centerMode: false,
       focusOnSelect: false,
       nextArrow: <SamplenextArrow />,
       prevArrow: <SampleprevArrow />,
     };
 
   
-
+    
 
     return (
       <Slider {...settings} className="benef-slider">
@@ -57,41 +56,49 @@ const Beneficios = () => {
           <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
             <h3>Gratuidad</h3>
           </a>
+          <p className="description">La gratuidad es un beneficio que cubre el arancel y matrícula de estudiantes de educación superior que cumplan con los requisitos.</p>
         </div>
-
+    
         <div className='slide'>
           <img src={image1} className="background-image"/>
-            <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
-              <h3>Becas y créditos<br/> Mineduc</h3>
-            </a>
+          <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
+            <h3>Becas y créditos<br/> Mineduc</h3>
+          </a>
+          <p className="description">Conjunto de becas y créditos ofrecidos por el Ministerio de Educación para apoyar a los estudiantes en sus estudios.</p>
         </div>
-
+    
         <div className='slide'>
           <img src={image1} className="background-image"/>
-            <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
-              <h3>Becas USM</h3>
-            </a>
+          <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
+            <h3>Becas USM</h3>
+          </a>
+          <p className="description">Becas internas de la Universidad Técnica Federico Santa María para apoyar a sus estudiantes en diversas áreas.</p>
         </div>
-
+    
         <div className='slide'>
           <img src={image1} className="background-image"/>
-            <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
-              <h3>Becas JUNAEB</h3>
-            </a>
+          <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
+            <h3>Becas JUNAEB</h3>
+          </a>
+          <p className="description">Becas ofrecidas por la Junta Nacional de Auxilio Escolar y Becas para estudiantes en distintos niveles educativos.</p>
         </div>
+    
         <div className='slide'>
           <img src={image1} className="background-image"/>
-            <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
-              <h3>Tarjeta Nacional Estudiantil</h3>
-            </a>
+          <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
+            <h3>Tarjeta Nacional Estudiantil</h3>
+          </a>
+          <p className="description">Beneficio que permite a los estudiantes acceder a tarifas rebajadas en el transporte público.</p>
         </div>
+    
         <div className='slide'>
           <img src={image1} className="background-image"/>
-            <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
-              <h3>Crédito Aval del Estado (CAE)</h3>
-            </a>
+          <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
+            <h3>Crédito Aval del Estado (CAE)</h3>
+          </a>
+          <p className="description">El Crédito con Aval del Estado es un beneficio que permite financiar los estudios de educación superior en cuotas a largo plazo.</p>
         </div>
-                
+        
       </Slider>
     );
   };

@@ -1,14 +1,25 @@
 .enlace-slider {
 
     display: flex;
-    padding-left: 15px;
+    padding-left: 10px;
     padding-right: 55px;
     padding-bottom: 50px;
     font-size: 150%;
+    
+    .custom-arrow {
+      z-index: 1; //Para que flechas estén sobre imagen
+      padding-bottom: 30px;
+      width: 30px; 
+      height: 30px; 
+      align-content: center;
+      filter: invert(24%) sepia(21%) saturate(7264%) hue-rotate(9deg) brightness(101%) contrast(101%);
+      scale: 1.2;
+    }
   
     .slick-slide {
       transition: transform 0.5s ease, opacity 0.5s ease;
       scale: 0.82;
+      opacity: 0.9;
     }
   
     .slick-center .slide {
@@ -20,7 +31,7 @@
   
     .slide {
       box-shadow: 0 1px 1rem -4px #000;
-      background-color: rgb(102, 102, 202);
+      background: #0056b3;
       padding: 20px;
       border-radius: 10px;
       text-align: center;
@@ -37,9 +48,44 @@
     .slide:hover{
       transform: scale(1.05);
     }
+
+
   
   }
-
 .enlace-slider a{
   text-decoration: none;
+  
+}
+
+.background-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.14);
+
+  object-fit: cover;
+  z-index:-2; /*Mantiene la imagen detras del texto */
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.529);
+  z-index: -1; /* Make sure the overlay is above the image */
+
+}
+
+
+.title_enlaces{
+  font-size: 270%;
+  margin: 0;
+  padding-top: 3rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+  color: white;
+  font-weight: bold;
 }
