@@ -77,7 +77,7 @@ const Beneficios = () => {
     
         <div className='slide'>
           <img src={usm} className="background-image"/>
-          <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" className="text">
+          <a href="https://rree.usm.cl/atencion-social-beneficios/beneficios-usm/" className="text">
             <h3>Becas USM</h3>
           </a>
           <p className="description">Becas internas de la Universidad Técnica Federico Santa María para apoyar a sus estudiantes en diversas áreas.</p>
